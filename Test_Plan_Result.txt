@@ -1,0 +1,74 @@
+C:\Users\Admin\PycharmProjects\CalcInterfaceTest>python test_calc.py
+
+DevTools listening on ws://127.0.0.1:57019/devtools/browser/17865995-3617-4124-9feb-15b77f91247f
+
+DevTools listening on ws://127.0.0.1:57052/devtools/browser/e30e4c37-6173-4d2c-bda6-14187b814f72
+[549028:549032:1122/045215.439:ERROR:device_event_log_impl.cc(211)] [04:52:15.438] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+DevTools listening on ws://127.0.0.1:57079/devtools/browser/8319134b-1b66-4506-ac8a-210588c13871
+F
+DevTools listening on ws://127.0.0.1:57107/devtools/browser/8343ea42-1e76-41e2-a6c0-9b309b9cdcb6
+[549640:548256:1122/045228.424:ERROR:device_event_log_impl.cc(211)] [04:52:28.424] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+DevTools listening on ws://127.0.0.1:57137/devtools/browser/7406af4c-8ffc-402e-9abd-359ba22c7084
+[533828:540676:1122/045237.396:ERROR:device_event_log_impl.cc(211)] [04:52:37.396] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+.
+DevTools listening on ws://127.0.0.1:57165/devtools/browser/cf1d889d-f800-4031-bfc6-8c80178408e9
+
+DevTools listening on ws://127.0.0.1:57193/devtools/browser/bd528772-44c6-4350-8294-3fe1efe16885
+
+DevTools listening on ws://127.0.0.1:57222/devtools/browser/14fcefcf-65fd-4017-8b5d-a5e75c999097
+F
+DevTools listening on ws://127.0.0.1:57250/devtools/browser/8c4a7162-8786-4fd2-a0dc-150f0db4b9cd
+
+DevTools listening on ws://127.0.0.1:57278/devtools/browser/484672c3-e351-4d6f-bb49-ec9d45f78dec
+[549692:549728:1122/045313.859:ERROR:device_event_log_impl.cc(211)] [04:53:13.860] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+DevTools listening on ws://127.0.0.1:57307/devtools/browser/c60b7853-6be2-4b5a-bc1f-1a5c18cd4fca
+
+DevTools listening on ws://127.0.0.1:57336/devtools/browser/b9b7caf1-d33a-43dc-bdc4-a0c1b72d21c5
+
+DevTools listening on ws://127.0.0.1:57365/devtools/browser/a1df9e45-3bf8-4423-b7fa-54bd2ce01ddd
+[547936:545252:1122/045333.638:ERROR:device_event_log_impl.cc(211)] [04:53:33.637] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+DevTools listening on ws://127.0.0.1:57394/devtools/browser/aab9621c-5fb9-423e-a80c-4ce9fb0c282c
+[550092:550096:1122/045341.691:ERROR:device_event_log_impl.cc(211)] [04:53:41.692] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+.
+DevTools listening on ws://127.0.0.1:57423/devtools/browser/bdb094bf-3bb4-45fa-bd6a-ffcddd66a364
+
+DevTools listening on ws://127.0.0.1:57452/devtools/browser/b8c4ccc2-3835-4988-81aa-c0bafac5d7b1
+[550168:550096:1122/045357.722:ERROR:device_event_log_impl.cc(211)] [04:53:57.722] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+DevTools listening on ws://127.0.0.1:57480/devtools/browser/21e12806-12ac-4fca-b2c1-2c5ddb20fbef
+F
+======================================================================
+FAIL: test_add (__main__.TestCalc)
+Testing addition operation
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_calc.py", line 12, in test_add
+    self.assertEqual(int(test_suite.addition('012', '08')), 20)
+AssertionError: 18 != 20
+
+======================================================================
+FAIL: test_division (__main__.TestCalc)
+Testing division operation
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_calc.py", line 45, in test_division
+    self.assertEqual(int(test_suite.division('099', '011')), 9) # This is a bug
+AssertionError: 11 != 9
+
+======================================================================
+FAIL: test_subtraction (__main__.TestCalc)
+Testing subtraction operation
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_calc.py", line 24, in test_subtraction
+    self.assertEqual(int(test_suite.subtraction('055', '05')), 50) #This is a bug
+AssertionError: 40 != 50
+
+----------------------------------------------------------------------
+Ran 5 tests in 123.538s
+
+FAILED (failures=3)
